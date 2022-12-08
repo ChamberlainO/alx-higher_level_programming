@@ -7,6 +7,3 @@ def delete_at(my_list=[], idx=0):
         del my_list[idx]
         new_list = my_list
     return new_list
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
