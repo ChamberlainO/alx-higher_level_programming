@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-def mutiply_list_map(my_list=[], number=0):
-    return list(map(lambda x: x * number, my_list))
+
+
+def only_diff_elements(set_1, set_2):
+    return (set_1 ^ set_2)
