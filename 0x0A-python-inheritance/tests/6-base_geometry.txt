@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+BaseGeometry = __import__('6-base_geometry').BaseGeometry
+
+i = BaseGeometry()
+
+try:
+    print(i.area())
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
