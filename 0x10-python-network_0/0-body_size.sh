@@ -1,3 +1,3 @@
 #!/bin/bash
-response=$(curl -sI "$1")
-content_length=$(echo "Content-Length: ${content_length} bytes" | grep -i "Content-Length" | awk '{print $2}')
+# a script to check the size of the body of the response
+curl -i $1 | grep Content-Length | tail -c 4
