@@ -1,3 +1,3 @@
 #!/bin/bash
-# Bash script that takes in a URL, sends a request to that URL
-curl -sI "$1" | grep 'Content-Length' | awk '{print $2}'
+response=$(curl -sI "$1")
+content_length=$(echo "Content-Length: ${content_length} bytes" | grep -i "Content-Length" | awk '{print $2}')
